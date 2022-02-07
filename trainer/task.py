@@ -6,7 +6,7 @@ if needs_reproducible:
   from numpy.random import seed
   seed(1)
   import tensorflow as tf
-  tf.set_random_seed(2)
+  tf.random.set_seed(2)
 
 from .checkpointers import *
 from .accuracy import *
