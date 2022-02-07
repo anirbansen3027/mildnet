@@ -5,7 +5,7 @@ needs_reproducible = True
 if needs_reproducible:
   from numpy.random import seed
   seed(1)
-  from tensorflow as tf
+  import tensorflow as tf
   tf.set_random_seed(2)
 
 from .checkpointers import *
